@@ -47,11 +47,8 @@ header::before {
 	background-color: var(--clr-bright-yellow);
 	color: var(--clr-white);
 	text-transform: uppercase;
-	border: 0;
-	outline: 0;
 	display: flex;
 	align-items: center;
-	transition: 1s;
 	font-weight: 700;
 }
 .header__container button .icon {

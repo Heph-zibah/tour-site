@@ -28,6 +28,14 @@ body {
 	background-color: var(--clr-white);
 	width: 100%;
 }
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: 1s;
+	background: transparent;
+	color: var(--clr-white);
+}
 .container {
 	max-width: var(--max-width);
 	margin: var(--margin-auto);
