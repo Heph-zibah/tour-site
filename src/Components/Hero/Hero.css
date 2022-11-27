@@ -32,7 +32,7 @@ header::before {
 }
 .header__container h1 span {
 	color: var(--clr-bright-yellow);
-	font-size: 3.5rem;
+	font-size: 3rem;
 }
 
 .header__container p {
