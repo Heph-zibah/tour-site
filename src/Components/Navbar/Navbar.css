@@ -58,17 +58,22 @@ nav .mobile__link ul li {
 }
 
 .nav__icon {
+	display: block;
 	font-size: 1.5rem;
 }
 
 @media screen and (min-width: 1020px) {
+	nav {
+		padding: 0;
+		left: 90px;
+	}
 	.nav__icon {
 		display: none;
 	}
 	.nav__container .nav__link {
 		display: block;
 	}
-	.nav__container .nav__link {
+	.nav__container .nav__link ul {
 		display: flex;
 		gap: 30px;
 		color: var(--clr-white);
@@ -76,6 +81,6 @@ nav .mobile__link ul li {
 		font-weight: 500;
 	}
 	nav .mobile__link {
-		display: block;
+		display: none;
 	}
 }
