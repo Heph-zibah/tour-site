@@ -25,10 +25,7 @@ header::before {
 	text-align: center;
 }
 .header__container h1 {
-	text-transform: uppercase;
 	font-size: 3rem;
-	font-family: 'Bungee Inline', cursive;
-	font-weight: 400;
 }
 .header__container h1 span {
 	color: var(--clr-bright-yellow);
