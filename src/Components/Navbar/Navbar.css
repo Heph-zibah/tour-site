@@ -17,10 +17,7 @@ nav {
 .nav__container .logo,
 .mobile__link .logo {
 	color: var(--clr-bright-yellow);
-	text-transform: uppercase;
-	font-family: 'Bungee Inline', cursive;
 	font-size: 48px;
-	font-weight: 400;
 }
 .nav__container .nav__link {
 	display: none;
