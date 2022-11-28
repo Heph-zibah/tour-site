@@ -10,9 +10,11 @@ function App() {
 		<div className='App'>
 			<Navbar />
 			<Hero />
-			<Tours />
-			<Review />
-			<Faq />
+			<main className='container'>
+				<Tours />
+				<Review />
+				<Faq />
+			</main>
 			<Footer />
 		</div>
 	);
