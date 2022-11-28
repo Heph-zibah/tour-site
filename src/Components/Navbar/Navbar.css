@@ -27,14 +27,17 @@ nav {
 }
 
 nav .mobile__link {
-	display: none;
 	position: fixed;
 	width: 80%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: var(--clr-forest-green);
+	background: var(--clr-forest-green);
 	padding: 1.5rem 0.9rem 0 0.9rem;
+	display: none;
+}
+nav .mobile__link.show {
+	display: block;
 }
 nav .mobile__link .mobile__header {
 	display: flex;
@@ -56,6 +59,9 @@ nav .mobile__link ul li {
 	text-align: center;
 	padding-bottom: 1.3rem;
 }
+nav .mobile__link ul li:hover {
+	border-bottom: 1px solid var(--clr-ash-grey);
+}
 
 .nav__icon {
 	display: block;
@@ -75,12 +81,24 @@ nav .mobile__link ul li {
 	}
 	.nav__container .nav__link ul {
 		display: flex;
+		align-items: center;
+		justify-content: center;
 		gap: 30px;
 		color: var(--clr-white);
+	}
+	.nav__container .nav__link ul li {
 		font-size: 20px;
 		font-weight: 500;
+		padding-bottom: 0.3rem;
+		transition: 1s;
+	}
+	.nav__container .nav__link ul li:hover {
+		border-bottom: 2px solid var(--clr-bright-yellow);
 	}
 	nav .mobile__link {
+		display: none;
+	}
+	nav .mobile__link.show {
 		display: none;
 	}
 }
