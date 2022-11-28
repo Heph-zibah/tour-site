@@ -1,6 +1,6 @@
 import Navbar from '../src/Components/Navbar/Navbar';
 import Hero from '../src/Components/Hero/Hero';
-import Tour from '../src/Components/Tour/Tour';
+import Tours from '../src/Components/Tours/Tours';
 import Review from '../src/Components/Review/Review';
 import Faq from '../src/Components/FAQ/Faq';
 import Footer from '../src/Components/Footer/Footer';
@@ -10,7 +10,7 @@ function App() {
 		<div className='App'>
 			<Navbar />
 			<Hero />
-			<Tour />
+			<Tours />
 			<Review />
 			<Faq />
 			<Footer />
