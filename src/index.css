@@ -40,3 +40,7 @@ button {
 	max-width: var(--max-width);
 	margin: var(--margin-auto);
 }
+li,
+a {
+	cursor: pointer;
+}
