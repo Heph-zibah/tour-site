@@ -1,11 +1,46 @@
 import React from 'react';
-import data from '../Tours/ToursData';
+import tours from '../Tours/ToursData';
 import '../Tours/Tours.css';
+import { BsFillStarFill } from 'react-icons/bs';
 
 const Tours = () => {
 	return (
 		<>
-			<section></section>
+			<main className='container '>
+				<section className='tours__container'>
+					<h1>
+						find <span>popular</span> destination
+					</h1>
+					<div className='tours__cards'>
+						{tours.map((tour) => {
+							const { img, title, price, id, rate } = tour;
+							return (
+								<div key={id} className='tours__card'>
+									<div className='tours__info'>
+										<img src={img} alt={title} className='tours__img' />
+										<h3>{title}</h3>
+										<div className='tours__price'>
+											<h4>
+												<strong>$</strong>
+												{price}
+												<span>/person</span>
+											</h4>
+											<p>
+												<BsFillStarFill className='rate__icon' />
+												{rate}
+											</p>
+										</div>
+										<div className='tours__btns'>
+											<button className='tours__btn book'>book now</button>
+											<button className='tours__btn interest'>not interested</button>
+										</div>
+									</div>
+								</div>
+							);
+						})}
+					</div>
+				</section>
+			</main>{' '}
 		</>
 	);
 };
