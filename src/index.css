@@ -36,6 +36,12 @@ button {
 	background: transparent;
 	color: var(--clr-white);
 }
+h1,
+h2 {
+	font-family: 'Bungee Inline', cursive;
+	font-weight: 400;
+	text-transform: uppercase;
+}
 .container {
 	max-width: var(--max-width);
 	margin: var(--margin-auto);
