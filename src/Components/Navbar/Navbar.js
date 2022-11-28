@@ -21,14 +21,14 @@ const Navbar = () => {
 					</div>
 
 					<button onClick={() => setNav(!nav)}>
-						{nav ? (
+						{!nav ? (
 							<TiThMenuOutline className='nav__icon' />
 						) : (
 							<FaTimes className='nav__icon' />
 						)}
 					</button>
 				</div>
-				<div className={!nav ? 'mobile__link show' : 'mobile__link'}>
+				<div className={!nav ? 'mobile__link' : 'mobile__link show'}>
 					<div className='mobile__header'>
 						<h1 className='logo'>travel.</h1>
 					</div>
