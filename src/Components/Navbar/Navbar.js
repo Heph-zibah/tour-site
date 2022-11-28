@@ -5,9 +5,6 @@ import { FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
-	const handleClick = () => {
-		setNav(!nav);
-	};
 	return (
 		<>
 			<nav>
@@ -23,14 +20,17 @@ const Navbar = () => {
 						</ul>
 					</div>
 
-					<button onClick={handleClick}>
-						<TiThMenuOutline className='nav__icon' />
+					<button onClick={() => setNav(!nav)}>
+						{nav ? (
+							<TiThMenuOutline className='nav__icon' />
+						) : (
+							<FaTimes className='nav__icon' />
+						)}
 					</button>
 				</div>
-				<div className='mobile__link'>
+				<div className={!nav ? 'mobile__link show' : 'mobile__link'}>
 					<div className='mobile__header'>
 						<h1 className='logo'>travel.</h1>
-						<FaTimes className='nav__icon' />
 					</div>
 					<ul>
 						<li>Home</li>
