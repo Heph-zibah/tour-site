@@ -9,7 +9,7 @@
 :root {
 	--clr-hunter-green: #31572c;
 	--clr-sap-green: #4f772d;
-	--clr-ash-grey: #b8c4bb;
+	--clr-ash-grey: #7c7a7a;
 	--clr-bright-yellow: #ffb238;
 	--clr-black: #000;
 	--clr-white: #fff;
@@ -47,4 +47,7 @@ h2 {
 li,
 a {
 	cursor: pointer;
+}
+a {
+	text-decoration: none;
 }
