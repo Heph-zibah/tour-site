@@ -69,20 +69,21 @@
 	font-weight: 700;
 	text-transform: capitalize;
 }
-.tours__btn.book {
+.tours__btn.read {
 	background-color: var(--clr-white);
 	color: var(--clr-hunter-green);
 	border: 1px solid var(--clr-bright-yellow);
+}
+.tours__btn.read:hover {
+	color: var(--clr-bright-yellow);
+	background-color: var(--clr-hunter-green);
+	border: none;
 }
 .tours__btn.interest {
 	background-color: var(--clr-bright-yellow);
 	color: var(--clr-hunter-green);
 }
-.tours__btn.book:hover {
-	color: var(--clr-bright-yellow);
-	background-color: var(--clr-hunter-green);
-	border: none;
-}
+
 .tours__btn.interest:hover {
 	color: var(--clr-bright-yellow);
 	background-color: var(--clr-hunter-green);
