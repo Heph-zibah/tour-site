@@ -4,6 +4,7 @@ import Tours from '../src/Components/Tours/Tours';
 import Review from '../src/Components/Review/Review';
 import Faq from '../src/Components/FAQ/Faq';
 import Footer from '../src/Components/Footer/Footer';
+import Tour from './Components/Tour/Tour';
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Hero />
 			<main className='container'>
 				<Tours />
+				<Tour />
 				<Review />
 				<Faq />
 			</main>
