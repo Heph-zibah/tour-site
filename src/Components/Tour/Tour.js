@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Tour.css';
 import datas from '../Tours/ToursData';
 import { BsFillStarFill } from 'react-icons/bs';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 
 const Tour = () => {
@@ -28,29 +28,33 @@ const Tour = () => {
 										</div>
 									</div>
 								</div>
-								<div className='tour__info'>
-									<h4>
-										<strong>$</strong>
-										{price}
-										<span>/person</span>
-									</h4>
-									<p>
-										<BsFillStarFill className='rate__icon' />
-										{rate}
-									</p>
-								</div>
+								<div className='tour__desc'>
+									<div className='tour__info'>
+										<h4>
+											<strong>$</strong>
+											{price}
+											<span>/person</span>
+										</h4>
+										<p>
+											<BsFillStarFill className='rate__icon' />
+											{rate}
+										</p>
+									</div>
 
-								<p className='tour__text'>
-									{readMore ? text : `${text.substring(0, 1000)}... `}
-									<button onClick={() => setReadMore(!readMore)}>
-										{readMore ? 'Show less' : 'Read more'}
-									</button>
-								</p>
-								<Link target='_blank' to={source}>
-									Source: {sourceName}
-								</Link>
-								<div>
-									<button className='tour__btn text'>book now</button>
+									<p className='tour__text'>
+										{readMore ? text : `${text.substring(0, 1000)}... `}
+										<button onClick={() => setReadMore(!readMore)}>
+											{readMore ? 'Show less' : 'Read more'}
+										</button>
+									</p>
+									<p className='tour__link'>
+										<a target='_blank' href={source} rel='noopener noreferrer'>
+											Source: {sourceName}
+										</a>
+									</p>
+									<div className='tour__btn '>
+										<button className='text'>book now</button>
+									</div>
 								</div>
 							</div>
 						);
