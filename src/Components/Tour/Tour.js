@@ -1,23 +1,27 @@
 import React, { useState } from 'react';
-import '../Tour/Tour.css';
+import './Tour.css';
 import datas from '../Tours/ToursData';
 import { BsFillStarFill } from 'react-icons/bs';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const Tour = () => {
 	const [readMore, setReadMore] = useState(false);
+	const navigate = useNavigate();
 	return (
 		<>
 			<section className='container'>
 				{datas.map((data) => {
-					const { id, img, price, title, rate, text } = data;
+					const { img, price, title, rate, text } = data;
 					return (
-						<div key={id} className='tour__content'>
+						<div key={data.id} className='tour__content'>
 							<div className='tour__img'>
 								<img src={img} alt={title} />
 								<div className='tour__title'>
 									<h1>{title}</h1>
 									<div className='tour__btns'>
-										<button className='tour__btn back'>Back</button>
+										<button className='tour__btn back' onClick={() => navigate(-1)}>
+											Back
+										</button>
 										<button className='tour__btn book'>Book Now</button>
 									</div>
 								</div>

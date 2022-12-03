@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import tours from '../Tours/ToursData';
 import '../Tours/Tours.css';
 import { BsFillStarFill } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const Tours = () => {
 	// const [tourSite, setTourSite] = useState(tours);
@@ -35,7 +36,9 @@ const Tours = () => {
 										</p>
 									</div>
 									<div className='tours__btns'>
-										<button className='tours__btn read'>Read More</button>
+										<button className='tours__btn read'>
+											<Link to={`Tour/${tour.id}`}>Read More</Link>
+										</button>
 										<button className='tours__btn interest'>not interested</button>
 									</div>
 								</div>
