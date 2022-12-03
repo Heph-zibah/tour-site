@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import tours from '../Tours/ToursData';
 import '../Tours/Tours.css';
 import { BsFillStarFill } from 'react-icons/bs';
@@ -37,7 +37,7 @@ const Tours = () => {
 									</div>
 									<div className='tours__btns'>
 										<button className='tours__btn read'>
-											<Link to={`Tour/${tour.id}`}>Read More</Link>
+											<Link to={`/Tour/${id}`}>Read More</Link>
 										</button>
 										<button className='tours__btn interest'>not interested</button>
 									</div>

@@ -1,3 +1,6 @@
+.tour__container {
+	padding: 2rem 0;
+}
 .tour__img {
 	width: 100%;
 	position: relative;
