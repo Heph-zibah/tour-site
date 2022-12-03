@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import tours from '../Tours/ToursData';
 import '../Tours/Tours.css';
 import { BsFillStarFill } from 'react-icons/bs';
 
 const Tours = () => {
+	// const [tourSite, setTourSite] = useState(tours);
+	// const handleDelete = (id) => {
+	// 	const newTour = tourSite.filter((tour) => tour.id !== id);
+	// 	setTourSite(newTour);
+	// };
 	return (
 		<>
 			<section className='tours__container'>
@@ -30,7 +35,7 @@ const Tours = () => {
 										</p>
 									</div>
 									<div className='tours__btns'>
-										<button className='tours__btn book'>book now</button>
+										<button className='tours__btn read'>Read More</button>
 										<button className='tours__btn interest'>not interested</button>
 									</div>
 								</div>
