@@ -5,11 +5,6 @@ import { BsFillStarFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 const Tours = () => {
-	// const [tourSite, setTourSite] = useState(tours);
-	// const handleDelete = (id) => {
-	// 	const newTour = tourSite.filter((tour) => tour.id !== id);
-	// 	setTourSite(newTour);
-	// };
 	return (
 		<>
 			<section className='tours__container'>
@@ -39,7 +34,6 @@ const Tours = () => {
 										<button className='tours__btn read'>
 											<Link to={`/Tour/${id}`}>Read More</Link>
 										</button>
-										<button className='tours__btn interest'>not interested</button>
 									</div>
 								</div>
 							</div>

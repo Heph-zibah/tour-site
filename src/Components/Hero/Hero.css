@@ -38,8 +38,10 @@ header::before {
 	text-transform: capitalize;
 	text-align: center;
 }
-
-.header__container button {
+.header__container button:hover {
+	background-color: transparent;
+}
+.header__container button a {
 	padding: 1rem 1.5rem;
 	background-color: var(--clr-bright-yellow);
 	color: var(--clr-white);
@@ -52,7 +54,7 @@ header::before {
 	font-size: 1.5rem;
 	margin-right: 0.9rem;
 }
-.header__container button:hover {
+.header__container button a:hover {
 	border: 1px solid var(--clr-bright-yellow);
 	background-color: transparent;
 	color: var(--clr-white);
